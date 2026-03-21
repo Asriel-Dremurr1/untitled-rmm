@@ -1138,7 +1138,7 @@ Get-ChildItem "$logPath\*.log" | Where-Object {
 
 ---
 
-## 📡 Monitoring and Telemetry
+## Monitoring and Telemetry
 
 ### Telemetry Collection
 
@@ -3433,7 +3433,7 @@ Get-ChildItem "$logPath\*.log" | Where-Object {
 
 ---
 
-## 📡 Мониторинг и телеметрия
+## Мониторинг и телеметрия
 
 ### Сбор телеметрии
 
@@ -3575,7 +3575,7 @@ telemetry/
 
 ---
 
-## 🗑️ Удаление и деинсталляция
+## Удаление и деинсталляция
 
 ### Удаление агента с клиентской машины
 

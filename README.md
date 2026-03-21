@@ -29,7 +29,7 @@ RMM for Windows 10+ Home for bulk task issuance
 
 ---
 
-## 🎯 Introduction {#introduction}
+## Introduction
 
 **RMM System** is a comprehensive solution for remote management and monitoring of Windows computers in a corporate network. The system consists of three main components:
 

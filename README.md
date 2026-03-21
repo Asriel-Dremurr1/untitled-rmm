@@ -269,7 +269,7 @@ Place files in the folder with `server.py`.
 
 #### Step 5: Create Administrator
 
-On first launch, an **Admin** user is created. Default password: 12345678 (CHANGE IT!). Set password via API:
+On first launch, an **Admin** user is created. The first time Admin logs in, any password will be accepted, and it will be saved forever. (To reset, delete the hash contents in the user data file). Set password via API:
 
 ```bash
 # Start server
@@ -2564,7 +2564,7 @@ mkcert myserver.local 192.168.1.100
 
 #### Шаг 5: Создание администратора
 
-При первом запуске создается пользователь **Admin**. Пароль по умолчанию: 12345678 (СМЕНИТЕ ЕГО!). Установите пароль через API:
+При первом запуске создается пользователь **Admin**. Первый вход Admin примет любой пароль и он будет сохранен на всегда. (для сброса в файле данных пользователей удалите содержимое хэша). Установите пароль через API:
 
 ```bash
 # Запустите сервер

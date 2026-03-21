@@ -1,7 +1,0 @@
-{
-  "ui_password_hash": "",
-  "agent_secret": "",
-  "server_secret": "",
-  "require_tls": false,
-  "port": 5000
-}

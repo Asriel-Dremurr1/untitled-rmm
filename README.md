@@ -51,7 +51,7 @@ RMM for Windows 10+ Home for bulk task issuance
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ### Overall System Diagram
 
@@ -155,7 +155,7 @@ HKLM\SOFTWARE\MYRMM\Secrets\
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 ### For Server:
 
@@ -180,13 +180,14 @@ requests>=2.31.0
 | Component | Minimum |
 |-----------|---------|
 | OS | **Windows 10** (version 1809+) or **Windows 11** |
-| Architecture | x64 (64-bit) |
+| Editorial | Windows Home |
+| Architecture | x86 (32-bit) |
 | RAM | 256 MB free |
 | Storage | 100 MB |
 | Privileges | Administrator rights for installation |
 | .NET | Not required (native C++) |
 
-**⚠️ IMPORTANT:** Agent works ONLY on Windows 10/11 (x64)!
+**⚠️ IMPORTANT:** Agent works ONLY on Windows 10/11 !
 
 ### For Control Panel:
 
@@ -198,7 +199,7 @@ requests>=2.31.0
 
 ---
 
-## 🚀 Installation and Setup
+## Installation and Setup
 
 ### 1. Server Installation
 
@@ -446,7 +447,7 @@ dist/controlpanel.exe
 
 ---
 
-## 👥 Agent Management
+## Agent Management
 
 ### Agent Lifecycle
 
@@ -637,7 +638,7 @@ curl https://192.168.1.100:5000/api/agents/HW-ABCD1234EFGH5678 \
 
 ---
 
-## 📋 Task Management
+## Task Management
 
 ### Task Types
 
@@ -850,7 +851,7 @@ Agent saves received tasks locally in `tasks.json`. This means:
 
 ---
 
-## 🔐 User Management
+## User Management
 
 ### Privilege System
 
@@ -988,7 +989,7 @@ curl https://192.168.1.100:5000/api/users \
 
 ---
 
-## 📊 Logging System
+## Logging System
 
 RMM maintains three types of logs:
 
@@ -1279,7 +1280,7 @@ Each file contains the latest agent telemetry. File is overwritten on update.
 
 ---
 
-## 🗑️ Uninstallation and Removal
+## Uninstallation and Removal
 
 ### Remove Agent from Client Machine
 
@@ -1318,21 +1319,6 @@ del /q /f C:\Windows\SysWOW64\agent.conf
 :: Delete from registry
 reg delete "HKLM\SOFTWARE\MYRMM" /f
 ```
-
-#### Option 3: Through Built-in Uninstall
-
-Agent supports built-in uninstall (if implemented):
-
-```cmd
-"C:\Program Files\RMMAgent\HomeDomainClient.exe" --uninstall
-```
-
-**What happens:**
-1. Service stops
-2. Service removed from system
-3. Registry keys deleted
-4. Files NOT deleted (do manually)
-
 ### Remove Server
 
 ```bash
@@ -1370,7 +1356,7 @@ Server configuration is stored in `servers.json` next to .exe.
 
 ---
 
-## 🔒 Security
+## Security
 
 ### Authentication
 
@@ -1566,7 +1552,7 @@ server_auth=9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08  # 
 
 ---
 
-## ⚠️ Troubleshooting
+## Troubleshooting
 
 ### Server Issues
 
@@ -1879,7 +1865,7 @@ curl https://192.168.1.100:5000/api/users \
 
 ---
 
-## 📖 API Reference
+## API Reference
 
 ### Authentication
 
@@ -2338,7 +2324,7 @@ This software is provided "as is" without any warranties. Use at your own risk. 
 
 ---
 
-## 🎯 Введение
+## Введение
 
 **RMM System** — это комплексное решение для удаленного управления и мониторинга Windows-компьютеров в корпоративной сети. Система состоит из трех основных компонентов:
 
@@ -2360,7 +2346,7 @@ This software is provided "as is" without any warranties. Use at your own risk. 
 
 ---
 
-## 🏗️ Архитектура системы
+## Архитектура системы
 
 ### Общая схема работы
 
@@ -2464,7 +2450,7 @@ HKLM\SOFTWARE\MYRMM\Secrets\
 
 ---
 
-## 💻 Системные требования
+## Системные требования
 
 ### Для сервера:
 
@@ -2489,13 +2475,14 @@ requests>=2.31.0
 | Компонент | Минимум |
 |-----------|---------|
 | ОС | **Windows 10** (версия 1809+) или **Windows 11** |
-| Архитектура | x64 (64-bit) |
+| Редакция | Windows Home |
+| Архитектура | x86 (32-bit) |
 | RAM | 256 MB свободной |
 | HDD | 100 MB |
 | Права | Права администратора для установки |
 | .NET | Не требуется (нативный C++) |
 
-**⚠️ ВАЖНО:** Агент работает ТОЛЬКО на Windows 10/11 (x64)!
+**⚠️ ВАЖНО:** Агент работает ТОЛЬКО на Windows 10/11 (x86)!
 
 ### Для панели управления:
 
@@ -2507,7 +2494,7 @@ requests>=2.31.0
 
 ---
 
-## 🚀 Установка и настройка
+## Установка и настройка
 
 ### 1. Установка сервера
 
@@ -2755,7 +2742,7 @@ dist/controlpanel.exe
 
 ---
 
-## 👥 Управление агентами
+## Управление агентами
 
 ### Жизненный цикл агента
 
@@ -2946,7 +2933,7 @@ curl https://192.168.1.100:5000/api/agents/HW-ABCD1234EFGH5678 \
 
 ---
 
-## 📋 Управление задачами
+## Управление задачами
 
 ### Типы задач
 
@@ -3159,7 +3146,7 @@ curl -X POST https://192.168.1.100:5000/api/tasks/delete \
 
 ---
 
-## 🔐 Управление пользователями
+## Управление пользователями
 
 ### Система привилегий
 
@@ -3297,7 +3284,7 @@ curl https://192.168.1.100:5000/api/users \
 
 ---
 
-## 📊 Система логирования
+## Система логирования
 
 RMM ведет три типа логов:
 
@@ -3628,20 +3615,6 @@ del /q /f C:\Windows\SysWOW64\agent.conf
 reg delete "HKLM\SOFTWARE\MYRMM" /f
 ```
 
-#### Вариант 3: Через встроенный uninstall
-
-Агент поддерживает встроенное удаление (если реализовано):
-
-```cmd
-"C:\Program Files\RMMAgent\HomeDomainClient.exe" --uninstall
-```
-
-**Что происходит:**
-1. Служба останавливается
-2. Служба удаляется из системы
-3. Ключи реестра удаляются
-4. Файлы НЕ удаляются (сделайте это вручную)
-
 ### Удаление сервера
 
 ```bash
@@ -3679,7 +3652,7 @@ rm -rf /path/to/controlpanel/
 
 ---
 
-## 🔒 Безопасность
+## Безопасность
 
 ### Аутентификация
 
@@ -3875,7 +3848,7 @@ server_auth=9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08  # 
 
 ---
 
-## ⚠️ Возможные проблемы и решения
+## Возможные проблемы и решения
 
 ### Проблемы с сервером
 

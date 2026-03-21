@@ -651,7 +651,6 @@ RMM supports the following task types:
 | **PULL_FILE** | Receive file from agent | `file_path` |
 | **PS** | Process monitoring | — |
 | **FS** | File system monitoring | `path` (path to scan) |
-| **NET** | Network monitoring | — |
 
 ### Create Task
 
@@ -662,7 +661,7 @@ RMM supports the following task types:
    - **RUN_CMD** — execute command
    - **PUSH_FILE** — send file
    - **PULL_FILE** — receive file
-   - **Monitoring** (PS/FS/NET)
+   - **Monitoring** (PS/FS)
 
 3. **Fill in parameters:**
 
@@ -793,7 +792,7 @@ curl https://192.168.1.100:5000/api/tasks/<task_id> \
 
 ### Real-time Monitoring
 
-For **PS** (processes), **FS** (file system), **NET** (network) tasks:
+For **PS** (processes), **FS** (file system) tasks:
 
 1. **Create monitoring task**
 2. **Open monitor:**
@@ -1076,13 +1075,6 @@ RMM maintains three types of logs:
    - Audit Log
    - HTTP Log
    - Technical Log
-3. **Log displayed in table:**
-   - Time filtering
-   - User filtering
-   - Event filtering
-4. **Export:**
-   - "📥 Export to CSV"
-   - "💾 Save as JSON"
 
 **Through API:**
 
@@ -2946,7 +2938,6 @@ RMM поддерживает следующие типы задач:
 | **PULL_FILE** | Получение файла с агента | `file_path` |
 | **PS** | Мониторинг процессов | — |
 | **FS** | Мониторинг файловой системы | `path` (путь для сканирования) |
-| **NET** | Мониторинг сети | — |
 
 ### Создание задачи
 
@@ -2957,7 +2948,7 @@ RMM поддерживает следующие типы задач:
    - **RUN_CMD** — выполнить команду
    - **PUSH_FILE** — отправить файл
    - **PULL_FILE** — получить файл
-   - **Мониторинг** (PS/FS/NET)
+   - **Мониторинг** (PS/FS)
 
 3. **Заполните параметры:**
 
@@ -3088,7 +3079,7 @@ curl https://192.168.1.100:5000/api/tasks/<task_id> \
 
 ### Мониторинг в реальном времени
 
-Для задач типа **PS** (процессы), **FS** (файловая система), **NET** (сеть):
+Для задач типа **PS** (процессы), **FS** (файловая система):
 
 1. **Создайте задачу мониторинга**
 2. **Откройте монитор:**
@@ -3371,13 +3362,6 @@ RMM ведет три типа логов:
    - Audit Log
    - HTTP Log
    - Technical Log
-3. **Лог отобразится в таблице:**
-   - Фильтрация по времени
-   - Фильтрация по пользователю
-   - Фильтрация по событию
-4. **Экспорт:**
-   - "📥 Экспорт в CSV"
-   - "💾 Сохранить как JSON"
 
 **Через API:**
 

@@ -1,6 +1,8 @@
 # untitled-rmm
 RMM for Windows 10+ Home for bulk task issuance
 
+# WARNING. it is JUST BETA. much function could dont work
+
 [English](#en)
 [Russian](#ru)
 
